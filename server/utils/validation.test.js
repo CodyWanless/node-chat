@@ -6,7 +6,7 @@ describe('isRealString', () => {
         // Arrange
         const testValue = 5;
 
-        // Act 
+        // Act
         const result = isRealString(testValue);
 
         // Assert
@@ -17,7 +17,7 @@ describe('isRealString', () => {
         // Arrange
         const testValue = '             ';
 
-        // Act 
+        // Act
         const result = isRealString(testValue);
 
         // Assert
@@ -28,7 +28,7 @@ describe('isRealString', () => {
         // Arrange
         const testValue = '   Test this value   ';
 
-        // Act 
+        // Act
         const result = isRealString(testValue);
 
         // Assert

@@ -3,11 +3,11 @@ const { generateMessage, generateLocationMessage } = require('./message');
 
 describe('generateMessage', () => {
     it('should generate correct message object', () => {
-        // Arrange 
+        // Arrange
         const text = 'this is a message text';
         const from = 'From user';
 
-        // Act 
+        // Act
         const message = generateMessage(from, text);
 
         // Assert
@@ -18,12 +18,12 @@ describe('generateMessage', () => {
 
 describe('generateLocationMessage', () => {
     it('should generate correct location object', () => {
-        // Arrange 
+        // Arrange
         const lat = 12;
         const long = 13;
         const from = 'From user';
 
-        // Act 
+        // Act
         const message = generateLocationMessage(from, lat, long);
 
         // Assert
@@ -33,4 +33,4 @@ describe('generateLocationMessage', () => {
         });
         expect(message.createdAt).toBeA('number');
     });
-}); 
+});

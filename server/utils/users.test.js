@@ -31,7 +31,7 @@ describe('Users', () => {
             room: 'test'
         };
 
-        // Act 
+        // Act
         var reUser = users.addUser(user.id, user.name, user.room);
 
         // Assert
@@ -40,7 +40,7 @@ describe('Users', () => {
 
     it('should return names for Test Room', () => {
         // Arrange
-        // Act 
+        // Act
         var userList = users.getUserList('Test room');
 
         // Assert
@@ -52,7 +52,7 @@ describe('Users', () => {
         // Act
         var removedUser = users.removeUser('1');
 
-        //Assert    
+        //Assert
         expect(removedUser.name).toBe('Mike');
         expect(users.users.length).toBe(2);
     });
